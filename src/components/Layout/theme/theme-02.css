@@ -1,0 +1,84 @@
+/*左边导航栏*/
+.index_cont .index_left_nav{
+    background:#fff!important;  
+    position: relative;
+}
+.index_cont .index_left_nav::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    height: 100%;
+    z-index: 88;
+    background: #efefef;
+}
+.index_cont .index_left_nav .auto_control_nav:hover .anticon{
+    color: #1EC185!important; 
+}
+/*用户头像*/
+.index_cont .index_left_nav .userImg{
+    box-shadow: none!important;
+    border:1px solid rgba(255,255,255,.6);
+}
+.index_cont .index_left_nav .userhandle{
+    background-color: #1EC185!important;
+}
+.index_cont .index_left_nav .userAction a.active{
+    background-color: #1EC185!important;
+}
+.index_cont .index_left_nav .userAction .tab-hover{
+    background-color: #1EC185!important;
+}
+/*右边导航栏文字颜色（选中）*/
+.index_cont .index_right_cont .index_right_cont_inner .index_right_cont_top_nav li a.active{
+    color: #1EC185!important; 
+}
+.index_cont .index_right_cont .index_right_cont_inner .index_right_cont_top_nav li a:before{
+    border-bottom: 3px solid #1EC185!important;
+}
+.index_cont .index_right_cont .index_right_cont_inner .index_right_cont_top_nav li a{
+    text-shadow:none!important;
+}
+.index_cont .index_right_cont .index_right_cont_inner .index_right_cont_top_nav li a:hover{
+    color: #1EC185!important;
+}
+
+/*index*/
+.index_cont .index_right_cont .TollPbsf .list-md-left .iptHandle .left .iptout .form .search{
+    background-color: #1EC185!important;
+}
+.index_cont .index_right_cont .TollPbsf .list-md-left .iptHandle .left .iptout .form .search:hover{
+    background-color: #18af77!important;
+}
+/*button*/
+.index_cont .index_right_cont .TollPbsf .list-md-left .iptHandle .right .innerBtn-col button{
+    background-color: #1EC185!important;
+}
+.index_cont .index_right_cont .TollPbsf .list-md-left .iptHandle .right .innerBtn-col button:hover{
+    background-color: #18af77!important;
+}
+/*radio*/
+.ant-radio-checked .ant-radio-inner{
+    border-color:#18af77!important;
+}
+.ant-radio-inner:after{
+    background-color: #18af77!important;
+}
+/*checkbox*/
+.ant-checkbox-checked .ant-checkbox-inner, .ant-checkbox-indeterminate .ant-checkbox-inner{
+    background-color: #18af77!important;
+    border-color: #18af77!important;
+}
+.ant-checkbox-inner:hover{
+    border:1px solid #18af77!important;
+}
+
+.ant-btn-primary{
+    background-color: #18af77!important;
+    border-color: #18af77!important;
+}
+.index_cont .index_right_cont .index_right_cont_inner .index_right_cont_container .RightInfo .tabLine .tabLine-col:hover i{
+     color: #1EC185!important;
+}

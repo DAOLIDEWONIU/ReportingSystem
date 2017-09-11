@@ -1,0 +1,106 @@
+.cont{
+  /*左边导航栏*/
+  .index_left_nav{
+    width: 180px;
+    float: left;
+    height:100%;
+    background: #3A3F4E;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    position: relative;
+    z-index: 1;
+    transition: all linear .2s;
+    li{
+      position: relative;
+      a{
+        //height: 50px;
+        //line-height:50px;
+        display: block;
+        font-size: 16px;
+        text-align: center;
+        position: relative;
+        padding: 6px 10px;
+        color: #fff;
+        transition: padding linear .2s;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+        z-index:1;
+        .anticon{
+          padding-bottom: 6px;
+          font-size: 22px;
+          line-height: 22px;
+          vertical-align: text-top;
+          display: block;
+        }
+      }
+      a:hover{
+        background: #4398F4;
+        color: #fff;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+        transition: padding linear .2s;
+        z-index:2;
+      }
+      a.btn{
+        background: #4398F4;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+      }
+    }
+    li.auto_control_nav{
+      padding: 10px;
+      text-align: center;
+      color: #fff;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    .User_ms{
+      width:100%;
+      height:150px;
+      background: #3a3f4e;
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 20px 0;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+      .UserImg{
+        width:78px;
+        height:78px;
+        border-radius: 50%;
+        background: url("../../../images/userImg.jpg") no-repeat;
+        background-size: contain;
+        margin: auto;
+      }
+      .UserHandle{
+        margin: auto;
+        margin-top:10px;
+        a{
+          font-size: 16px;
+          display: block;
+          color: #fff;
+        }
+      }
+
+    }
+  }
+  //左边导航栏改变
+  .index_left_nav_change{
+    width:60px;
+    transition: all linear .2s;
+    li{
+      a{
+        font-size: 0;
+        padding: 10px;
+        .anticon{
+          font-size: 30px;
+          line-height: 30px;
+          padding-bottom:0;
+        }
+      }
+    }
+    .User_ms_change{
+      height: 130px;
+      .UserImg_change{
+        width: 50px;
+        height:50px;
+      }
+    }
+
+  }
+}

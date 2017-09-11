@@ -1,0 +1,66 @@
+.index_cont .index_right_cont .MainContent .MainRightCont .taskInfo .taskInfo-in .mes .mes-group .mes-across{
+    .mes-info{
+        .shownum{
+            display: inline-block;
+            font-size: 14px;
+            color: #666;
+            margin-right:6px; 
+        }
+        .shownum>div{
+            display: inline-block;
+            margin-right: 6px;
+            background: rgba(255, 205, 210, 0.4);
+            border: 1px solid #EF9A9A;
+            color: #d06262;
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+        .addnum{
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 3px;
+            color: #4BBE97;
+            padding: 6px 12px;
+            transition-duration: .3s;
+        }
+        .addnum:hover{
+            transition-duration: .3s;
+            background: #eee;
+        }
+        .ant-popover-message-title{
+            // width: 200px;
+            height: 30px;
+            input{
+                display: block;
+                width: 100%;
+                height: 100%;
+                line-height: 1.5;
+                font-size: 14px;
+                padding: 0 4px; 
+                border-radius: 3px;
+                border: 1px solid #ccc;
+            }
+        }
+        .ant-popover-buttons button {
+            span{
+                padding: 0;
+            }
+        }
+        .ant-popover-message > .anticon{
+            line-height: 30px;
+        }
+    }
+    .upload{
+        // padding: 0;
+        // border:1px dashed #d9d9d9;
+        // background: #fbfbfb;
+        // width: 40px;
+        // height: 40px;
+        // border-radius: 3px;
+        .ant-btn{
+            span{
+                padding: 0;
+            }
+        }
+    }
+} 

@@ -1,0 +1,599 @@
+.addOut{
+    width: 950px;
+    margin: 30px auto;
+    box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+    border-radius: 4px;
+    overflow: hidden;
+    background: #fff;
+    position: relative;
+    z-index: 10;
+    .fixedBtn{
+        position: fixed;
+        top: 50%;
+        margin-left: 960px;
+        .Btn{
+            height: 56px;
+            width: 56px;
+            line-height:56px;
+            font-size: 14px;
+            overflow: hidden;
+            border-radius: 50%;
+            text-align: center;
+            cursor: pointer;
+            color: #fff;
+            margin-bottom: 20px;
+            box-shadow: rgba(0, 0, 0, 0.156863) 0px 3px 10px, rgba(0, 0, 0, 0.227451) 0px 3px 10px;
+        }
+        .Btn:hover{
+            opacity: 0.9;
+            transition-duration: 0.3s;
+        }
+        .ant-badge-count{
+            right: -10px;
+            box-shadow: none;       
+        }
+    }
+    /*页面头部*/
+    .tips{
+        background: #fff4ec;
+        font-size: 14px;
+        line-height: 35px;
+        color: #ff7000;
+        padding: 0 25px;
+    }
+    .TopTitle{
+        height: 70px;
+        position: relative;
+        box-sizing: border-box;
+        padding: 0 100px;
+    }
+    .TopTitle:after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        right: 0;
+        transform: translate(-50%,0);
+        width: 200px;
+        height: 1px;
+        background: #cdcdcd;
+    }
+    .TopTitle:before{
+        content: '';
+        position: absolute;
+        bottom: -1px;
+        left: 50%;
+        right: 0;
+        transform: translate(-50%,0);
+        width: 60px;
+        height: 3px;
+        background: #f7931e;
+        z-index: 2;
+    }
+    .editReason{
+        padding: 0 12px;
+        margin-top: 12px;
+    }
+    .pageTitle{
+        line-height: 70px;
+        font-size: 24px;
+        font-weight: 500;
+        color: #333;
+        text-align: center;
+    }
+    .iconOut{
+        display: none;
+        position: absolute;
+        top: -4px;
+        left: -4px;
+        width: 108px;
+        height: 107px;
+        background: url("../../../images/index/add-icon.png") no-repeat;
+    } 
+    .iconOut:after{
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        width: 0;
+        height: 100%;
+    }
+    /*表单*/
+    .form-group{
+        width: 100%;
+    } 
+    .form-group-in{
+        padding: 40px 40px 100px;
+        width: 100%;
+        .ipt-list{
+            border-left: 2px solid #e9e9e9;
+            // border-radius: 4px;
+            // margin-top: 30px;
+            .formTitle{
+                width: 100%;
+                height: 46px;
+                margin: 0 auto;
+                padding-left: 12px;
+                line-height: 46px; 
+                text-align: left;
+                font-size: 14px;
+                color: #606060;      
+                // border-bottom: 1px solid #BBDEFB;    
+                // background: #BBDEFB;  
+                position: relative;
+                i{
+                    display: none;
+                    position: absolute;
+                    left: 16px;
+                }
+            }
+            .formTitle:after{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -2px;
+                height: 100%;
+                width: 0;
+                z-index: 99;
+                border-left: 2px solid #fff;
+            }
+            .formTitle::before{
+                content: '';
+                position: absolute;
+                top: 50%;
+                transform: translate(0,-50%);
+                left: -8px;
+                height: 14px;
+                width:14px;
+                border-radius: 50%;
+                border:2px solid #3498DB;
+                z-index: 100; 
+            }
+            .formCont{
+                width: 100%;
+                padding: 20px;
+                box-sizing: border-box;
+                display: flex;
+                flex-wrap: wrap;   
+                background: #fff;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+                .formCont-ipt-list{
+                    min-width: 344px;
+                    width:50%;
+                    padding: 16px;
+                    text-align: center;
+                    position: relative;
+                    .ipt-mes{
+                        position: absolute;
+                        bottom: -18px;
+                        left: 100px;
+                        right: 0;
+                        font-size: 12px;
+                        text-align: left; 
+                        color: #ff362d;
+                        box-sizing: border-box;
+                    }
+                } 
+                .ipt-list-out{
+                    display: inline-block;
+                    vertical-align: middle;  
+                    width: 100%;
+                    position: relative;
+                    .form-ipt{
+                        width: 100%;
+                        height: 100%; 
+                        padding-left: 100px;
+                        position: relative;
+                        .TipsIcon{
+                            color: #00A854;
+                        }
+                    }
+                    .iptName{
+                        position: absolute;
+                        left: 0;
+                        top:0;
+                        bottom: 0;
+                        width: 100px;
+                        height: 100%;
+                        padding-right: 4px;
+                        line-height: 46px;
+                        font-size: 14px;
+                        // font-weight: bold;
+                        text-align: right;
+                        color: #969696;
+                        z-index: 10;
+                        span{
+                            position: relative;
+                            line-height: 1.5;
+                        }
+                        span:before{
+                            position: absolute;
+                            top: 50%;
+                            left:-10px;
+                            transform: translate(0,-50%);
+                            display: block;
+                            content: "*";
+                            font-family: SimSun;
+                            line-height: 1;
+                            font-size: 12px;
+                            color: #f04134;
+                            font-weight: normal;
+                        }
+                    }
+                    input.ipt{
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        font-size: 14px;
+                        line-height: 1.5;
+                        color: #333;
+                        padding-left: 6px;
+                        padding: 0 40px 0 6px;
+                        border: 1px solid #e5e5e5;
+                        border-radius: 4px;
+                        box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+                        box-shadow: inset 1px 1px 2px rgba(200,200,200,0.2);
+                        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+                    }
+                    input.errorTips{
+                        border-color: #F17E79;
+                        box-shadow: 0 0 3px 0px #F17E79;
+                    }
+                    input.ipt:focus{
+                        border-color: #66afe9;
+                        box-shadow: 0 0 3px 0px #66afe9;
+                        // box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+                        // transition: all 200ms ease-in-out;
+                        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+                    }
+                    input.ipt:hover{
+                        border-color: #66afe9;
+                    }
+
+                    /*antd 样式*/
+                    .ant-input{
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        font-size: 14px;
+                        line-height: 1.5;
+                        color: #333;
+                        padding-left: 6px;
+                        border: 1px solid #e5e5e5;
+                        border-radius: 3px;
+                        box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+                        box-shadow: inset 1px 1px 2px rgba(200,200,200,0.2);
+                        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+                    }
+                    .ant-input:hover{
+                        border-color: #66afe9;
+                    }
+                    .ant-input:focus{
+                        border-color: #66afe9;
+                        box-shadow: 0 0 3px 0px #66afe9;
+                        // box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+                        // transition: all 200ms ease-in-out;
+                        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+                    }
+                    textarea{ 
+                        display: block;
+                        width: 100%;
+                        height: 100px;
+                        padding: 4px;
+                        line-height: 1.5;
+                        font-size: 14px;
+                        border: 1px solid #e5e5e5;
+                        // background: #fbfbfb;
+                        border-radius: 3px;
+                        box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+                        transition: all 200ms ease-in-out;
+                        resize: vertical;/*输入框限制宽度*/
+                    }
+                    textarea:focus{
+                        border-color: #3498DB;
+                        box-shadow: 0 0 3px 0px #3498DB;
+                        transition: all 200ms ease-in-out;
+                        
+                    }
+                    textarea::-webkit-scrollbar{
+                        width: 5px;
+                        height: 5px;
+                    }
+                    textarea::-webkit-scrollbar-thumb {
+                        background: #8c8c8c;
+                        border-radius: 1em;
+                        cursor: -webkit-grab;
+                        cursor: grab; 
+                    }
+                    textarea::-webkit-scrollbar-track {
+                        background: rgba(0, 0, 0, 0.05);
+                    }
+
+                    .right-cont{
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        font-size: 16px;
+                        color: #333;
+                        position: relative;
+                        padding-left: 100px;
+                        /*弹出日历容器*/ 
+                        .popupdate{
+                            position: absolute;
+                            width: 234px;
+                            height: 100%;
+                            left: 110px;
+                            top:0;
+                            bottom: 0; 
+                            .popupdateIn{
+                                position: relative;
+                                width: 100%;
+                                height: 100%;
+                                .ant-calendar-picker-container{
+                                    left: 0!important;
+                                }  
+                            }
+                        }
+                        .ant-calendar-picker{
+                            display: block;
+                            width: 100%!important;
+                            height: 100%;
+                            position: relative;
+                            z-index: 9;
+                        }
+                        .ant-calendar-picker>div{                   
+                            width: 100%;
+                            height: 100%;         
+                        }
+                        .ant-select-selection--single{
+                            height: 100%;
+                        }
+                        .ant-select-selection__rendered{
+                            line-height: 46px;
+                            font-size: 14px;                    
+                            box-sizing: border-box;       
+                        }     
+                        .ant-select-search--inline{              
+                            width: 250px;                             
+                        }
+                        .ant-select-selection{
+                            border: 1px solid #e5e5e5;
+                            position: relative;
+                            z-index: 9;
+                            box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+                            transition: all 200ms ease-in-out;
+                        }
+                        .ant-select-selection:hover{
+                            border-color: #66afe9;
+                        }
+
+                        .ant-select-open .ant-select-selection{
+                            // box-shadow:none;
+                            box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+                            transition: all 200ms ease-in-out;
+                        }
+                        .ant-select-focused .ant-select-selection, .ant-select-selection:focus, .ant-select-selection:active{
+                            // box-shadow:none;
+                             border-color: #66afe9;
+                            box-shadow: 0 0 3px 0px #66afe9;
+                            // box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+                            transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+                        }
+                        .upload{
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            .ant-upload.ant-upload-select{
+                                width: 100%;
+                                height:100%;
+                                padding-left: 110px;
+                            }
+                            .ant-upload-list {
+                                overflow: auto!important;
+                                height: 100px;
+                                border: 1px solid #ddd;
+                                border-top-color: transparent;
+                                width: 100%;
+                                box-sizing: content-box;
+                                margin-left: -1px;
+                            }
+                            .ant-upload-list::-webkit-scrollbar {
+                                width: 5px;
+                                height: 5px;
+                            }
+                            .ant-upload-list::-webkit-scrollbar-thumb {
+                                background: #8c8c8c;
+                                border-radius: 1em;
+                                cursor: -webkit-grab;
+                                cursor: grab;
+                            }
+                            .ant-upload-list::-webkit-scrollbar-track {
+                                background: rgba(0, 0, 0, 0.05);
+                            }
+                        }
+                        .upload-btn{
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            font-size: 14px;
+                            border: none;
+                            background: #fff;
+                            cursor: pointer;
+                            color: #CCCCCC;
+                        }
+                    }
+                    .right-cont:after{
+                        content: '';
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: 0;
+                        height: 100%;
+                    }
+                    /**特殊错误框提示*/
+                    .right-cont-error{
+                        .ant-input{
+                            border-color: #ff362d;
+                        }
+                        .ant-input:focus{
+                            box-shadow: 0 0 3px 0px #ff362d;
+                        }
+                        .ant-calendar-picker-icon:after{
+                            color: #ff362d;
+                        }
+                    }
+                    .right-cont-right{
+                        .ant-calendar-picker-icon:after{
+                            color: #00A854;
+                        }
+                    }
+                    .right-cont-select-error{
+                        .ant-select-selection{
+                            border-color: #ff362d;
+                        }
+                        .ant-select-selection:focus{
+                            border-color:#ff362d;
+                            box-shadow: 0 0 3px 0px #ff362d;
+                        }
+                        .ant-select-arrow{
+                            color: #ff362d;
+                        }
+                    }
+                    .right-cont-select-right{
+                        .ant-select-arrow{
+                            color: #00A854;
+                        }
+                    }
+
+
+                    /**错误框提示*/
+                    .form-ipt-error{
+                        input.ipt{
+                            border-color: #ff362d;
+                        }
+                        input.ipt:focus{
+                            box-shadow: 0 0 3px 0px #ff362d;
+                        }
+                        .TipsIcon{
+                            position: absolute;
+                            top:50%;
+                            transform: translate(0,-50%);
+                            right:8px; 
+                            font-size: 14px;
+                            color: #F04134;
+                            animation: zoomIn .3s cubic-bezier(.12,.4,.29,1.46);
+                        }
+                    }               
+                    /**正确提示*/
+                    .form-ipt-right{
+                        .TipsIcon{  
+                            position: absolute;            
+                            top:50%;
+                            transform: translate(0,-50%);
+                            right:8px;  
+                            font-size: 14px;  
+                            color: #00A854;
+                            animation: zoomIn .3s cubic-bezier(.12,.4,.29,1.46);
+                        }                    
+                    }
+                }
+            }
+        } 
+         
+    }
+    /*提交按钮*/
+    .form-btn{
+        width: 100%;
+        padding-top: 50px;
+        text-align: center;
+        button{
+            display: inline-block;
+            width: 220px;
+            height: 50px;
+            line-height:inherit;
+            color: rgba(255,255,255,.62);
+            background-color: #f7931e;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: all 200ms ease-in-out;
+            box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+        }
+        button:hover{
+            color: #fff;
+            background-color:#f89e35;
+            transition: all 200ms ease-in-out;
+        }
+    }
+}
+.ant-confirm-title{
+    font-size: 16px!important;
+}
+.ant-radio-button-wrapper:not(:first-child)::before{
+    display: none!important;
+}
+.choose {
+    .title{
+        color: #999;
+        margin-right: 6px;  
+    }
+    span.com{
+        display: inline-block;
+        font-weight: normal;
+        font-size: 14px;   
+    }
+}
+
+//修改样式
+
+.editOuter{
+    font-size: 14px;
+    .EditHead{
+        padding: 6px 12px;
+    }
+    .EditBody{
+        padding: 6px 12px;
+        background: #F2F2F5;
+        .ant-radio-group{
+            font-size: 14px;
+        }
+        .ant-radio-wrapper{
+           font-size: 14px;
+           margin:6px ;
+           display: block;
+           white-space:pre-wrap;
+        }
+        .ant-radio{
+            vertical-align: -1px;
+        }
+    }
+    .Editfoot{
+        text-align: center;
+        padding: 10px 0;
+        button{
+            display: inline-block;
+            padding: 0 12px;
+            min-width: 60px;  
+            height: 34px;
+            font-size: 14px;
+            border-radius: 4px;
+            margin: 0 6px; 
+            cursor: pointer; 
+            background: #f7931e;
+            color: #fff;
+            border-color: rgba(221, 221, 221, 0.11);
+            box-shadow: 0px 1px 2px rgba(0,0,0,0.25);  
+        }
+        button.sure:hover{
+            background: #f89e35;
+            transition-duration: 0.3s;
+        }
+        button.exit{
+            background: transparent;
+            border: 1px solid #ddd;
+            color: #666;
+        }
+    }
+}
+
+
+   

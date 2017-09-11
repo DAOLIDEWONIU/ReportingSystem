@@ -1,0 +1,443 @@
+.settingCont{
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    .settingCont-in{
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        border-radius: 3px;
+        box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+        .table-group{
+            width: 100%;
+            height: 100%;
+        }
+        .topToolBar{
+            height: 60px;
+            padding: 0 12px;
+            box-sizing: border-box;
+            .topToolBar-col{
+                display: inline-block;
+                vertical-align: middle;
+                width: 100%;
+            }
+            .btn{
+                display: inline-block;
+                margin-right: 12px;
+                button{
+                    // width: 80px;
+                    height: 36px;
+                    padding: 0 12px;
+                    line-height: 36px;
+                    border-radius: 3px;
+                    font-size: 14px;
+                    color: rgba(255, 255, 255, 0.85);
+                    border: 1px solid #49A9EE;
+                    background-color: #49A9EE;
+                    cursor: pointer;
+                    transition-duration: .3s;
+                }
+                button:hover{
+                    transition-duration: .3s;
+                    color: #fff;
+                    background: #4b9ad4;
+                }
+            }
+            .search{
+                float: right;
+                height: 40px;
+                width: 280px;
+                position: relative;
+                transition: width 0.25s ease;
+                input{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    padding: 0 40px 0 6px;
+                    line-height: 1.5;
+                    font-size: 14px;
+                    border: 1px solid #ccc;
+                    border-radius: 3px;
+                    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+                    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+                    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+                }
+                input:focus{
+                    border-color: #66afe9;
+                    box-shadow: 0 0 3px 0px #66afe9;
+                    transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+                    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+                }
+                .searchIcon {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    width: 40px;
+                    height: 100%;
+                    text-align: center;
+                    cursor: pointer;
+                    i{
+                        display: inline-block;
+                        vertical-align: middle;
+                        font-size: 16px;
+                        color: #666;
+                        font-weight: 600;
+                    }  
+                }
+                .searchIcon:after{
+                    content: '';
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 0;
+                    height:100%;
+                }
+            }
+            .searchFocus{
+                width: 360px;
+                transition: width 0.25s ease;
+            }
+        } 
+        .topToolBar:after{
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            width: 0;
+            height: 100%;
+        }
+        .table-cont{
+            height: calc(100% - 60px);
+            .table-head{
+                table{
+                    border-collapse: collapse;
+                    table-layout: fixed;
+                    width: 100%;
+                    tr{
+                        border-top: 1px solid rgba(34,36,38,.1);
+                        border-bottom: 1px solid rgba(34,36,38,.1);
+                        background: #fff;
+                    }
+                    th{
+                        //width: 14%;
+                        height: 60px;
+                        font-size: 14px;
+                        text-align: left;
+                        padding:0 20px;
+                        color: rgba(0,0,0,.87);
+                        background: #f9fafb;
+                    }
+                    .userRight{
+                        width: 360px;
+                    }
+                    .operation{
+                        width: 300px; 
+                        text-align: center;
+                        .operation-in{
+                            width: 100%;
+                            height:100%;
+                        }
+                    }
+                }
+            }
+            .table-body{
+                height: calc(100% - 186px); 
+                overflow: auto;
+                table{
+                    border-collapse: collapse;
+                    table-layout: fixed;
+                     width: 100%;
+                     tr{   
+                         color: rgba(0,0,0,.87);
+                         border-bottom: 1px solid #e9e9e9;
+                         transition-duration: 0.3s;
+                     }
+                     tr:nth-child(even){
+                         background: #f9fafb;
+                     }
+                     td{ 
+                         height: 54px;
+                        font-size: 14px;  
+                        text-align: left;
+                        padding:0 20px;
+                        // color: #666;
+                         .power{
+                             display: inline-block;
+                             color: #017E66;
+                             background-color: rgba(1,126,102,0.08);
+                             font-weight: normal;
+                             text-align: center;
+                             padding: 0 6px;
+                             border-radius: 2px;
+                             height: 20px;
+                             line-height: 20px;
+                             font-size: 12px;
+                             margin-right: 5px;
+                             cursor:default;
+                         }
+                     }
+                    .userRight{
+                        width: 360px;
+                    }
+                     .operation{
+                        width: 300px; 
+                        height: 100%;
+
+                         .operation-in{
+                             width: 100%;
+                             height:100%;
+                             display: flex;
+                             flex-wrap: wrap;
+                         }
+                        .operation-col{
+                            width: 33.33%;
+                            text-align: center;
+                        }
+                        .operation-col:after{
+                            content: '';
+                            display: inline-block;
+                            vertical-align: middle;
+                            width: 0;
+                            height: 100%;   
+                        }
+                        button{
+                            display: inline-block;
+                            vertical-align: middle;       
+                            width: 62px;
+                            height: 30px;
+                            position: relative;  
+                            border-radius: 3px;
+                            font-size: 14px;
+                            color: #666;
+                            border: 1px solid;
+                            cursor: pointer;
+                            background: transparent;
+                            transition-duration: .3s;
+                        }
+                         button:after{
+                             content: '';
+                             position: absolute;
+                             width: 100%;
+                             height:100%;
+                             top:0;
+                             left:0;
+                             right:0;
+                             bottom:0;
+                         }
+                        .edit{
+                            color: #fe990b;
+                            border-color: #fe990b;
+                        }
+                        .edit:hover{
+                            color: #fff;
+                            background: #fe990b;
+                            transition-duration: .3s;
+                        }
+                         .remove{
+                             color: #f23e47;
+                             border-color: #f23e47;
+                         }
+                         .remove:hover{
+                             color: #fff;
+                             background: #f23e47;
+                             transition-duration: .3s;
+                         }
+                        .start{
+                            color: #00B38B;
+                            border-color: #00B38B;
+                        }
+                        .start:hover{
+                            color: #fff;
+                            background: #00B38B;
+                            transition-duration: .3s;
+                        }
+                        .stop{
+                            color: #f23e47;
+                            border-color: #f23e47;
+                        }
+                        .stop:hover{
+                            color: #fff;
+                            background: #f23e47;
+                            transition-duration: .3s;
+                        }
+                    }
+                     tr:hover{
+                        background: rgba(0,0,0,.05);
+                        color: rgba(0,0,0,.95);
+                        transition-duration: 0.3s;
+                     }
+                }
+            }
+            .table-foot{
+                width: 100%;
+                text-align: center;        
+                height: 100px;
+                .ant-pagination{
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+                .ant-pagination-disabled{
+                    min-width: 34px;
+                    height: 34px;
+                    line-height: 34px;
+                }
+                .ant-pagination-prev a:after, .ant-pagination-next a:after{
+                    font-size: 16px;
+                     height: 34px;
+                    line-height: 34px;
+                }
+                .ant-pagination-item{
+                    min-width: 34px;
+                    height: 34px;
+                    line-height: 34px;
+                }
+                .ant-pagination-options-quick-jumper{
+                    height: 34px;
+                    line-height: 34px;
+                    font-size: 14px;
+                }
+                .ant-pagination-options-quick-jumper input{
+                    height: 34px;
+                }
+
+
+
+            }
+            .table-foot:after{
+                content: '';
+                display: inline-block;
+                vertical-align: middle;
+                width: 0;
+                height: 100%;
+            }
+        }
+    }
+}
+
+
+/**新增部门*/
+.AddDepartmentT{
+    position: relative;
+    padding: 12px;
+    .loadingShow{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top:-63px;
+        font-size: 14px;
+        //background: #d1f0ff;
+        padding: 12px;
+        color:#08c;            
+        text-align: center;            
+    }
+    .AddDepartmentT-ipt{
+        position: relative;
+        margin-top: 20px;
+        .tipsError{
+            position: absolute;
+            top:-26px;
+            left:0;
+            font-size: 14px;
+            font-weight: 600;
+            color: #f04134;
+        }
+        .iptOuter{
+            padding-right:100px;
+            position: relative;
+            input{
+                font-size: 14px;
+                height: 36px;
+            }
+            .BtnOuter{
+                position: absolute;
+                right: 0;
+                top:50%;
+                transform: translate(0,-50%);
+                button{
+                    display: inline-block;
+                    height: 34px;
+                    font-size: 14px;
+                    border-radius: 4px;
+                    margin: 0 6px;
+                    cursor: pointer;
+                    background: #f7931e;
+                    color: #fff;
+                    border-color: rgba(221, 221, 221, 0.11);
+                    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+                    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+                }
+                .sure:hover{
+                    background: #f89e35;
+                    transition-duration: 0.3s;
+                }
+            }
+        }
+
+    }
+    .AddDepartmentT-list{
+        margin-top: 20px;
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            thead{
+                th{
+                    padding: 12px 6px;
+                    font-size: 14px;
+                    border: 1px solid #eee;
+                }
+                .handle{
+                    width: 120px;
+                }
+            }  
+            tbody{
+                td{
+                    height: 50px;
+                    padding: 6px;
+                    font-size: 14px;
+                    border: 1px solid #eee;
+                    .iptEdit{
+                        padding-right: 146px;
+                        position: relative;
+                        .Btn{
+                            position: absolute;
+                            right: 0;
+                            top:50%;
+                            transform: translate(0,-50%);
+                            button{
+                                margin-left:6px;
+                            }         
+                        }        
+                        .ant-btn-lg:after{   
+                            content: '';
+                            position: absolute;
+                            width: 100%;
+                            height:100%;
+                            top:0;
+                            left: 0;
+
+                        }
+
+                    }
+                    .ant-input-lg{
+                        height: 36px;
+                    }
+                }      
+                .handle{
+                    width: 120px;
+                    text-align: center;
+                    button{
+                        margin: 0 6px;        
+                    }
+                    button:after{       
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;                 
+                        bottom: 0;                                 
+                    } 
+                }
+            }
+        }
+    }
+}
